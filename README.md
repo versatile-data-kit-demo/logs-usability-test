@@ -161,4 +161,3 @@ Through this scenario, you created a data job, which:
 
 **Congrats!**
 
-**[> Go back to main page of the Workshop.](https://github.com/versatile-data-kit-amld/workshop#ev-range-prediction)**
