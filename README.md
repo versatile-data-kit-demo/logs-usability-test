@@ -139,14 +139,13 @@ vdk deploy
 ## Exercises
 Please open up MyBinder to get started on the exercises! 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-amld/linear-regression-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/setup.ipynb)
 
 If you have any issue with above link try 
- - [this one](https://ovh.mybinder.org/v2/gh/versatile-data-kit-amld/linear-regression-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
- - [or this](https://gesis.mybinder.org/v2/gh/versatile-data-kit-amld/linear-regression-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [this one](https://ovh.mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [or this](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/setup.ipynb)
 
-
-You can find the *solved* MyBinder environment [here](https://mybinder.org/v2/gh/versatile-data-kit-amld/linear-regression-example-solved/HEAD?labpath=setup.ipynb)
+ 
 
 For more information on MyBinder, please visit:
 
