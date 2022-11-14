@@ -1,5 +1,6 @@
 numpy
 quickstart-vdk
+vdk-trino
 
 # necessary for sql in jupyter
 ipython-sql

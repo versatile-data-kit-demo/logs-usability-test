@@ -31,10 +31,16 @@ Exercises section, where you will find links to the MyBinder environments.
 
 ## Background
 ### Linear Regression
+
+
+<details>
+<summary><i>Short explanation about Linear regression</i></summary>
+---
+
 Linear regression is often referred to as the building block of statistical learning methods. In a nutshell,
 it is an attempt to model a relationship between two or more variables by fitting a linear equation
 to the data at hand. For example, suppose you plot people's salaries on the y-axis and their years of
-education on the x-axis in a simple scatter plot. In this sense, you are trying to estimate a dependent 
+education on the x-axis in a simple scatter plot. In this sense, you are trying to estimate a dependent
 variable (salary) by using a predictor (years of education) by drawing a line of best fit through the data.
 A line of best fit is a line that minimizes the sum of the distances from itself to each point in the data. The resulting
 line's slope, is the coefficient of the predictor (i.e., what kind of effect one unit change of years of education
@@ -71,16 +77,21 @@ Linear regression contains a lot of aspects to it that need to be considered. To
 * Non-linear transformations of the predictors
 * Interaction and dummy/binary variables
 
-are only just a handful of topics that need to be considered. For a much better and a lot more detailed explanation of
-linear regression (and statistical methods, in general) please visit: https://www.statlearning.com/.
+are only just a handful of topics that need to be considered.
+
+---
+</details>
+
+
+For a much better and a lot more detailed explanation of linear regression (and statistical methods, in general) there are plenty of resources on the internet. For example: https://www.statlearning.com/.
 
 ### Electric Car Battery Example
-#### Data Source 
+#### Data Source
 https://www.kaggle.com/gktuzgl/id-3-pro-max-ev-consumption-data
 
 #### Explanation
 Using the data provided by Göktuğ Özgül on Kaggle.com, we will build a simple linear regression
-model that predicts battery drainage: how much will your electric car's battery drain if you drive it 
+model that predicts battery drainage: how much will your electric car's battery drain if you drive it
 in certain ways. For example, how much should you expect your battery to be drained if you drive 50 km at
 50 km per hour, using heated seats?
 
@@ -88,9 +99,9 @@ We will cover:
 * How to read in the data and deal with special characters
 * How to explore the data, both for numerical variables and categorical variables
 * How to process the data and very light feature engineering (i.e., creating new variables from existing ones)
-* How to deal with multicollinearity
 * One of the many possible ways to perform feature selection
-* How to deal with possible data leakage
+* How to build high quality data ot be used as input for your model
+* How to follow Dimensional design process to do the above.
 * How to build a simple linear regression model
 * How to extract the results and predictions from the model
 * How to build a simple Streamlit dashboard showcasing your model's predictive ability
@@ -103,7 +114,7 @@ We will cover:
 * https://www.youtube.com/watch?v=Klqn--Mu2pE
 * https://medium.com/codex/step-by-step-guide-to-simple-and-multiple-linear-regression-in-python-867ac9a30298
 
-### VDK 
+### VDK
 The Versatile Data Kit framework allows you to implement automated pull ingestion and batch data processing.
 
 #### Create the Data Job Files
@@ -137,27 +148,26 @@ vdk deploy
 ```
 
 ## Exercises
-Please open up MyBinder to get started on the exercises! 
+Please open up MyBinder to get started on the exercises!
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/setup.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/exercise.ipynb)
 
-If you have any issue with above link try 
- - [this one](https://ovh.mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/setup.ipynb)
- - [or this](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/setup.ipynb)
+If you have any issue with above link try
+ - [this one](https://ovh.mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/exercise.ipynb)
+ - [or this](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/dsc/HEAD?urlpath=lab/tree/exercise.ipynb)
 
- 
 
 For more information on MyBinder, please visit:
 
-https://mybinder.readthedocs.io 
+https://mybinder.readthedocs.io
 
 ## Lessons Learned
 Through this scenario, you created a data job, which:
 * Read in a local CSV file and stripped it off its special characters
-* Performed exploratory data analysis
-* Used the results from the exploratory data analysis to process the data
+* Process the data using dimensional modelling
 * Built and tested a linear regression model
 * Built an interactive Streamlit dashboard, which showcased your model's predictive ability
+* Create, develop and deploy jobs using Versatile Data Kit (VDK)
 
 **Congrats!**
 
