@@ -9,34 +9,16 @@ from parameters import parameters
 # setting up the title of the page...
 st.title('Electric Cars and Battery Drain Linear Regression Example')
 
-# setting up the sub-header for the first part of the page...
-st.header("Our Simple Model's Accuracy")
-st.write("How Did Our Model Perform?")
 
 # some definitions...
 os.chdir(pathlib.Path(__file__).parent.absolute())
 actual_vs_pred_loc = 'build-ml-model/model/actual_vs_model_predicted_battery_drain_test.csv'
 model_loc = 'build-ml-model/model/demo_linear_regression_model.sav'
 
-# reading in the actual versus predicted data set...
-actual_vs_pred = pd.read_csv(actual_vs_pred_loc, usecols=range(1, 3))
-actual_vs_pred['absolute_difference'] = abs(
-    actual_vs_pred['battery_drain'] - actual_vs_pred['battery_drain_prediction']
-)
-st.dataframe(actual_vs_pred)
-battery_drain = actual_vs_pred[['battery_drain']]
-battery_drain_prediction = actual_vs_pred[['battery_drain_prediction']]
 
-# outputting some performance metrics...
-mse = round(mean_squared_error(battery_drain, battery_drain_prediction), 2)
-mae = round(mean_absolute_error(battery_drain, battery_drain_prediction), 2)
-r2  = round(r2_score(battery_drain, battery_drain_prediction), 2)
 
-st.metric("The Mean Squared Error of This Model On This Testing Data Is:", mse)
-st.metric("The Mean Absolute Error of This Model On This Testing Data Is:", mae)
-st.metric("The R2 is:", r2)
 
-# setting up the sub-headers for the second part of the page...
+# setting up the sub-headers for the 1st part of the page...
 st.header('How Much Will Your Electric Car Battery Drain? You May Be Surprised!')
 st.write("Enter Your Custom Values in the SideBar - Please Enter Sensible Values Only!")
 
@@ -63,3 +45,29 @@ elif estimate < 0:
     st.metric("Your Estimated Battery Drainage (in Percent) Is:", estimate)
 else:
     st.metric("Your Estimated Battery Drainage (in Percent) Is:", estimate)
+
+
+
+
+
+# setting up the sub-header for the second part of the page...
+st.header("Stats for nerds")
+st.write(" How Did Our Model Perform?")
+
+# reading in the actual versus predicted data set...
+actual_vs_pred = pd.read_csv(actual_vs_pred_loc, usecols=range(1, 3))
+actual_vs_pred['absolute_difference'] = abs(
+    actual_vs_pred['battery_drain'] - actual_vs_pred['battery_drain_prediction']
+)
+st.dataframe(actual_vs_pred)
+battery_drain = actual_vs_pred[['battery_drain']]
+battery_drain_prediction = actual_vs_pred[['battery_drain_prediction']]
+
+# outputting some performance metrics...
+mse = round(mean_squared_error(battery_drain, battery_drain_prediction), 2)
+mae = round(mean_absolute_error(battery_drain, battery_drain_prediction), 2)
+r2  = round(r2_score(battery_drain, battery_drain_prediction), 2)
+
+st.metric("The Mean Squared Error of This Model On This Testing Data Is:", mse)
+st.metric("The Mean Absolute Error of This Model On This Testing Data Is:", mae)
+st.metric("The R2 is:", r2)
