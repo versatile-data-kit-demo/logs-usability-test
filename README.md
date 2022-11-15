@@ -171,3 +171,5 @@ Through this scenario, you created a data job, which:
 
 **Congrats!**
 
+<!-- **[> Go back to main page of the Workshop.](https://github.com/vmware/versatile-data-kit/tree/main/events/dsc#feedback)** -->
+
