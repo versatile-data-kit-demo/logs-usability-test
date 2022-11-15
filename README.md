@@ -90,6 +90,10 @@ For a much better and a lot more detailed explanation of linear regression (and 
 https://www.kaggle.com/gktuzgl/id-3-pro-max-ev-consumption-data
 
 #### Explanation
+
+<details>
+<summary><i>Short explanation about the main use case and goals</i></summary>
+
 Using the data provided by Göktuğ Özgül on Kaggle.com, we will build a simple linear regression
 model that predicts battery drainage: how much will your electric car's battery drain if you drive it
 in certain ways. For example, how much should you expect your battery to be drained if you drive 50 km at
@@ -106,7 +110,7 @@ We will cover:
 * How to extract the results and predictions from the model
 * How to build a simple Streamlit dashboard showcasing your model's predictive ability
 
-#### Sources Referred To
+**Sources Referred To**
 * https://www.kaggle.com/gktuzgl/id-3-pro-max-ev-consumption-data
 * https://www.statlearning.com/
 * https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html#sphx-glr-auto-examples-linear-model-plot-ols-py
@@ -114,10 +118,17 @@ We will cover:
 * https://www.youtube.com/watch?v=Klqn--Mu2pE
 * https://medium.com/codex/step-by-step-guide-to-simple-and-multiple-linear-regression-in-python-867ac9a30298
 
-### VDK
+
+---
+</details>
+
+### Versatile Data Kit (VDK)
 The Versatile Data Kit framework allows you to implement automated pull ingestion and batch data processing.
 
-#### Create the Data Job Files
+<details>
+<summary><i>Short explanation about Versatile Data Kit</i></summary>
+
+**Create the Data Job Files**
 
 Data Job directory can contain any files, however there are some files that are treated in a specific way:
 
@@ -128,7 +139,7 @@ Data Job directory can contain any files, however there are some files that are 
 
 Delete all files you do not need and replace them with your own.
 
-#### Data Job Code
+**Data Job Code**
 
 VDK supports having many Python and/or SQL steps in a single Data Job. Steps are executed in ascending alphabetical order based on file names.
 Prefixing file names with numbers makes it easy to have meaningful file names while maintaining the steps' execution order.
@@ -139,13 +150,17 @@ Run the Data Job from a Terminal:
 vdk run <path to Data Job directory>
 ```
 
-#### Deploy Data Job
+**Deploy Data Job**
 
 When a Job is ready to be deployed in a Versatile Data Kit runtime (cloud):
 Run the command below and follow its instructions (you can see its options with `vdk --help`)
 ```python
 vdk deploy
 ```
+
+---
+</details>
+
 
 ## Exercises
 Please open up MyBinder to get started on the exercises!
@@ -171,5 +186,5 @@ Through this scenario, you created a data job, which:
 
 **Congrats!**
 
-**[> Go back to main page of the Workshop.](https://github.com/vmware/versatile-data-kit/tree/main/events/dsc#feedback)** 
+**[> Go back to main page of the Workshop.](https://github.com/vmware/versatile-data-kit/tree/main/events/dsc#feedback)**
 

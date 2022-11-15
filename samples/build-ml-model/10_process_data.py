@@ -16,7 +16,7 @@ def run(job_input: IJobInput):
 
     # reading in the data...
     conn = job_input.get_managed_connection().connect()
-    df = pd.read_sql("select * from staging_area_trips", conn)
+    df = pd.read_sql("select * from fact_trips", conn)
 
     # Let's drop the rows with missing values.
     # There are many ways to deal with missing values

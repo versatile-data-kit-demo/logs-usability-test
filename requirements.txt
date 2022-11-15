@@ -14,5 +14,5 @@ nbserverproxy
 pyarrow==7.0.0
 seaborn
 matplotlib
-sklearn
+scikit-learn
 xlsxwriter
