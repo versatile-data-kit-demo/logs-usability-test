@@ -7,7 +7,7 @@ import streamlit as st
 from parameters import parameters
 
 # setting up the title of the page...
-st.title('Electric Cars and Battery Drain Linear Regression Example')
+st.title('Electric Car Battery Drain Calculator')
 
 
 # some definitions...
