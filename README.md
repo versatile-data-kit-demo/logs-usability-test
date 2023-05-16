@@ -16,6 +16,7 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Purpose
+
 The purpose of this scenario is to show how to:
 * Create a data job with VDK
 * Write Python scripts within a data job
