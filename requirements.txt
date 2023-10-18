@@ -1,6 +1,9 @@
 numpy
 quickstart-vdk
 vdk-trino
+vdk-notebook
+vdk-ipython
+vdk-jupyterlab-extension
 
 
 # necessary for sql in jupyter
