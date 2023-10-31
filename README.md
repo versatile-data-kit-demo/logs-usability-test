@@ -27,6 +27,10 @@ For detailed instructions on working with VDK, please refer to the guide from th
 ## Exercises
 
 The tutorial-job directory contains the ready-to-use code from this demo. Make sure to explore it as it will provide hands-on experience with the objectives and VDK Jupyter integration discussed in this guide.
+Please open up MyBinder to get started on the exercises!
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/duyguHsnHsn/vmware-explore/HEAD)
+
 
 ## Lessons Learned
 Throughout this scenario, you've:
