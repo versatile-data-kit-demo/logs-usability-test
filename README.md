@@ -5,8 +5,6 @@
 - [Exercises](#exercises)
 - [Lessons Learned](#lessons-learned)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ## Purpose
 
 The purpose of this scenario is to demonstrate how to operationalize Jupyter notebooks using the Versatile Data Kit (VDK) Jupyter integration. By the end of this guide, you'll understand how to:
