@@ -43,4 +43,4 @@ Throughout this scenario, you've:
 
 **Congratulations!**
 
-**[> Go back to the main page of the Workshop.](https://github.com/vmware/versatile-data-kit/tree/main/events/jupyter-vmware-explore)**
+**[> Go back to the main page of the Tutorial.](https://github.com/vmware/versatile-data-kit/tree/main/events/vmware-explore-23/productionizing-jupyter-notebooks)**
