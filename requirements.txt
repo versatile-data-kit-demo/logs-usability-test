@@ -1,6 +1,6 @@
 numpy
 quickstart-vdk
-vdk-trino
+Vdk-sqlite
 vdk-notebook
 vdk-ipython
 vdk-jupyterlab-extension
