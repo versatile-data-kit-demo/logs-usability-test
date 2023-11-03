@@ -31,6 +31,9 @@ Please open up MyBinder to get started on the exercises!
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/duyguHsnHsn/vmware-explore/HEAD?labpath=tutorial-job%2F10_notebook.ipynb)
 
+The link did not work? 
+Try this one out: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/duyguHsnHsn/vmware-explore/HEAD?labpath=tutorial-job%2F10_notebook.ipynb)
+
 ## Lessons Learned
 Throughout this scenario, you've:
 * Explored the capabilities of the VDK Jupyter integration.
