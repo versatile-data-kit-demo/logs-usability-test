@@ -1,14 +1,8 @@
 numpy
 quickstart-vdk
-Vdk-sqlite
-vdk-notebook
-vdk-ipython
-vdk-jupyterlab-extension
-
-
-# necessary for sql in jupyter
-ipython-sql
-jupyterlab_sql
+vdk-sqlite
+vdk-structlog
+pandas
 
 streamlit
 jupyter-server-proxy
