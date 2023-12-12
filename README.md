@@ -33,6 +33,6 @@ This environment will include a purposely failing job, simulating a real-world s
   - This will include questions about the clarity of the logs, ease of finding errors, and overall user experience in debugging.
 
 
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/logs-usability-test/HEAD)
 
 **[> Go back to the Logs Usability Tests Wiki page.]()**
