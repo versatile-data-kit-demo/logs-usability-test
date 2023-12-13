@@ -35,4 +35,4 @@ This environment will include a purposely failing job, simulating a real-world s
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/logs-usability-test/HEAD)
 
-**[> Go back to the Logs Usability Tests Wiki page.]()**
+**[> Go back to the Logs Usability Tests Wiki page.](https://github.com/vmware/versatile-data-kit/wiki/VDK-Logs-Usability-Testing)**

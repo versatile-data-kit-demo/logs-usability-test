@@ -16,4 +16,12 @@ def run(job_input: IJobInput):
     df['Age'] = df['Age'] + 1  # Increment age by 1
 
     job_input.execute_query("""CREATE TABLE IF NOT EXISTS people (ID TEXT, Name TEXT, Age TEXT, City TEXT)""")
-    job_input.send_tabular_data_for_ingestion(table_name="people", method="insert", payload=df)
+
+    rows = df.values.tolist()
+    column_names = df.columns.tolist()
+
+    job_input.send_tabular_data_for_ingestion(
+        rows=rows,
+        column_names=column_names,
+        destination_table="people"
+    )
