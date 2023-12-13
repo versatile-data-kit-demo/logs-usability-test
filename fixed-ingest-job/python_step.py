@@ -13,7 +13,7 @@ def run(job_input: IJobInput):
     # Read CSV data into a DataFrame
     df = pd.read_csv("./data.csv")
 
-    df['Age'] = df['Age'] + 1  # Increment age by 1
+    df['Age'] = pd.to_numeric(df['Age'], errors='coerce').fillna(0) + 1
 
     job_input.execute_query("""CREATE TABLE IF NOT EXISTS people (ID TEXT, Name TEXT, Age TEXT, City TEXT)""")
 
@@ -22,6 +22,6 @@ def run(job_input: IJobInput):
 
     job_input.send_tabular_data_for_ingestion(
         rows=rows,
-        columnn_names=column_names,
+        column_names=column_names,
         destination_table="people"
     )
